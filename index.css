@@ -1,0 +1,181 @@
+        body{
+            background-color: rgb(101, 97, 97);
+            margin: 0%;
+        }
+        .header{
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 4rem;
+            color:rgb(16, 15, 15)
+        }
+        .container{
+            max-width: 250px;
+            margin:50px auto;
+            padding: 20px;
+            border:1px solid rgb(122, 94, 68);
+            background-color:rgb(221, 168, 119);
+            border-radius:2px;
+        }
+        h2
+        {
+            /* text-align: center; */
+            margin-top:0px;
+            font-size: 15px;
+        }
+        .form-group
+        {
+            margin-bottom:15px;
+        }
+        label{
+            display:block;
+            font-size: 10px;
+            margin-bottom:2px;
+        }
+        input{
+            font-size: 10px;
+            width:96%;
+            border:1px solid black;
+            border-radius: 2px;
+            padding:5px;
+            background-color: rgb(214, 227, 239);
+        }
+        input:focus
+        {
+            /* outline: none; */
+            outline:none;
+        }
+
+        #submit
+        {
+            font-size:10px;
+            padding:5px;
+            background-color: rgb(58, 86, 4);
+            border:none;
+            border-radius: 2px;
+            color: white;
+        }
+        p{
+            margin-top: 0px;
+            margin-bottom:0px;
+            font-size:7px;
+            color:red;
+            font-weight: bold;
+            
+        }
+        .password-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .password-container input {
+            width: 100%;
+        }
+
+        .password-container i {
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+            font-size: small;
+            opacity:0.6;
+        }
+        .password-container i:hover{
+            opacity: 1;
+        }
+
+
+           @media screen and (min-width: 768px) {
+            .header{
+                font-size: 2.5rem;
+            }
+            .container {
+                max-width: 400px;
+                padding: 30px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            label {
+                font-size: 14px;
+            }
+
+            input {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+
+            #submit {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+
+
+            @media screen and (min-width: 1024px) {
+            
+            .container {
+                max-width: 500px;
+                padding: 40px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            label {
+                font-size: 16px;
+            }
+
+            input {
+                font-size: 16px;
+                padding: 10px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            #submit {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+
+          @media screen and (max-width: 480px) {
+            .header{
+                font-size: 2rem;
+            }
+            .container {
+                max-width: 90%;
+                margin: 20px auto;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            label {
+                font-size: 12px;
+            }
+
+            input {
+                font-size: 12px;
+                padding: 6px;
+            }
+
+            p {
+                font-size: 9px;
+            }
+
+            #submit {
+                font-size: 12px;
+                padding: 6px;
+            }
+        } 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">Registration Form</div>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="#" id="registration-form" method="post" onsubmit="return validate(event)">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="name" id="name" name="name">
+                <p id="error-name"></p>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <p id="error-email"></p>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password">
+                    <i class="fa-solid fa-eye" id="password-display"></i>
+                </div>
+                <p id="error-password"></p>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">confirm password:</label>
+                <div class="password-container">
+                    <input type="password" id="confirm-password" name="confirm-password">
+                    <i class="fa-solid fa-eye" id="confirm-password-display"></i>
+                </div>
+                <p id="error-confirm-password"></p>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
